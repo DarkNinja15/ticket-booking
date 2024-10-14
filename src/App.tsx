@@ -10,11 +10,12 @@ const App = () => {
 
     <div className="flex justify-evenly items-center">
       <div className="flex">
-        <Input /> // Input component
+      {/* // Input component */}
+        <Input /> 
       </div>
 
       <div className="pt-4">
-        // Display the coach layout
+        {/* // Display the coach layout */}
         {coach.map((row, rowIndex) => (
           <div
             key={rowIndex}
