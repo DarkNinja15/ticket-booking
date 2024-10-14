@@ -3,17 +3,18 @@ import Input from "./components/Input";
 import useStore from "./store/store";
 
 const App = () => {
-  const { coach } = useStore();
+  const { coach } = useStore(); // Get the coach from the store
 
   return <div>
     <h1 className="text-2xl font-bold text-center pt-4">Train Seat Reservation</h1>
 
     <div className="flex justify-evenly items-center">
       <div className="flex">
-        <Input />
+        <Input /> // Input component
       </div>
 
       <div className="pt-4">
+        // Display the coach layout
         {coach.map((row, rowIndex) => (
           <div
             key={rowIndex}

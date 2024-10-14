@@ -7,6 +7,7 @@ const Input = () => {
 
   return (
     <div className="flex gap-2">
+      {/* // Input field for entering the number of seats to book */}
       <input
         type="text"
         placeholder="Enter seats"
@@ -14,6 +15,8 @@ const Input = () => {
         className="input input-bordered w-full max-w-xs"
         onChange={(e) => setValue(e.target.value)}
       />
+
+      {/* // Button to reserve the seats */}
       <button
         className="btn bg-white text-black"
         onClick={() => {
